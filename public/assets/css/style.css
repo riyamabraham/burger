@@ -1,0 +1,31 @@
+
+body{
+    background-color: rgb(207, 149, 77);
+    left:200px;
+    right: 200px;
+}
+    
+button{
+    color:white;
+    background-color: blue;   
+}
+
+
+
+.container,.create-form{
+    text-align: center;
+}
+
+.left{
+    position: relative;
+    width:250px;
+    left: 250px;
+    background-color: white;
+}
+.right{
+    position: relative;
+    width:250px;
+    left:850px;
+    background-color: white;
+}
+
