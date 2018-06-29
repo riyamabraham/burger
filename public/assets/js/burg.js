@@ -33,5 +33,19 @@ $(function(){
     
   });
 
+  $(".delete_it").on("click",function(event){
+    var id = $(this).data("id");
+    console.log("here");
+    $.ajax("/api/burgers/" +id,{
+      type:"DELETE"
+    }).then(function(){
+      //console.log("here");
+      console.log("deleted ",id);
+     location.reload(true);
+    }
+  );
+
+  });
+
 });
 

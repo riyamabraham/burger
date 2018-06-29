@@ -6,11 +6,13 @@
 
 <ol class="left">
   {{#each burgers}} {{#unless devoured}} {{> burger/burger-block devour=true}} {{/unless}} {{/each}}
+  
 </ol>
 
 
 <ol class="right">
   {{#each burgers}} {{#if devoured}} {{> burger/devour-block devour=false}} {{/if}} {{/each}}
+  
 </ol>
 
 
@@ -25,7 +27,7 @@
 
   <br>
 
-  <button type="submit">SUBMIT</button>
+  <button type="submit"  class="submit">SUBMIT</button>
   <p>Enter the burger you want to eat and click SUBMIT</p>
 
 </form>
